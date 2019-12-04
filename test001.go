@@ -8,8 +8,11 @@ import (
 	"github.com/labstack/echo"
 )
 
+//测试跑该模块，使用 go run test001.go
+//测试部署该模块，使用 go install helloworld
+
 func main() {
-	fmt.Printf("hello chain world test001 \n")
+	fmt.Printf("hello chain world test005 \n")
 
 	e := echo.New()
 	e.GET("/", api.HelloWorld)
