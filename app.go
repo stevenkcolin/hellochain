@@ -12,7 +12,7 @@ import (
 //测试部署该模块，使用 go install helloworld
 
 func main() {
-	fmt.Printf("hello chain world test005 \n")
+	fmt.Printf("hello chain world app.go \n")
 
 	e := echo.New()
 	e.GET("/", api.HelloWorld)
