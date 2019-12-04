@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
+
+	api "helloworld/api"
 
 	"github.com/labstack/echo"
 )
@@ -11,8 +12,6 @@ func main() {
 	fmt.Printf("hello chain world test001 \n")
 
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
+	e.GET("/", api.HelloWorld)
 	e.Logger.Fatal(e.Start(":1323"))
 }
