@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Printf("hello chain world \n")
+	fmt.Printf("hello chain world test001 \n")
 
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
