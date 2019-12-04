@@ -1,2 +1,0 @@
-# hellochain
-test for hellochain
